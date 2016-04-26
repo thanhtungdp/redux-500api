@@ -1,1 +1,1 @@
-# Hello React
+# React with redux & hot loader (simple starter kit)
