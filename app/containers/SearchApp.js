@@ -1,5 +1,6 @@
 import React, {Component, PropTypes} from 'react';
 import {bindActionCreators} from 'redux';
+import {Grid, Col} from 'react-bootstrap';
 import {connect} from 'react-redux';
 import * as action from '../actions/SearchActions';
 import SearchInput from '../components/SearchInput';
@@ -11,15 +12,12 @@ class SearchApp extends Component {
         return (
             <div>
                 <div id="header" className="header">
-                    <div className="container">
-                        <div className="row">
-                            <div className="col-md-6 col-md-offset-3 search-bar-content">
-                                <h1>Search adsda giờ c lâu thấy bà kkadk kjad k kjads k jsd kadjas kad j
-                                    skadon 500px hello baby</h1>
+                    <Grid>
+                            <Col md={6} mdOffset={3} className="search-bar-content">
+                                <h1>Search 500px</h1>
                                 <SearchInput actions={actions} status={this.props.status} search={this.props.search} dispatch={this.props.dispatch}/>
-                            </div>
-                        </div>
-                    </div>
+                            </Col>
+                    </Grid>
                 </div>
                 <div className="container">
                     <PhotoList actions={actions} photos={this.props.photos} status={this.props.status}
