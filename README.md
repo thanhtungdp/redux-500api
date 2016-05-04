@@ -1,5 +1,5 @@
 
-# React Redux Simple Starter Kit (simple, clean, easy)
+# React Redux Simple Starter Kit
 This project is a simple starter for developing with react,  redux & hot loader.
 > Simple, Clean, Flexibility and Fast development
 
