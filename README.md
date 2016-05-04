@@ -38,7 +38,6 @@ Default server is running on port `8080`. If you want to change, you can edit at
 Go to: `http://localhost:8080`
 
 ## Building production
----
 ``` code
 npm run buid
 ```
@@ -72,7 +71,6 @@ Root
 ```
 
 ## Import other sass packages
----
 Edit at `app/App.js`
 Example:
 ``` javascript
