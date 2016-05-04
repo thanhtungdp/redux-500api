@@ -8,9 +8,7 @@ It uses an example from [redux-example](https://github.com/yildizberkay/redux-ex
 ## Demo online
 [http://redux500.firebaseapp.com/](redux500.firebaseapp.com/)
 
----
 ## About
-
 Using technologies:
 * [React](https://github.com/facebook/react)
 * [React Router](https://github.com/rackt/react-router)
@@ -25,16 +23,14 @@ Using technologies:
 * [FontAwesome](fortawesome.github.io/Font-Awesome/icons/) font icons
 
 ## Installation
----
-```
+``` code
 git clone https://github.com/thanhtungdp/redux-500api
 cd redux-500api
 npm install
 ```
 
 ## Running dev server
----
-```
+``` code
 npm run dev 
 (or npm run start)
 ```
@@ -43,7 +39,7 @@ Go to: `http://localhost:8080`
 
 ## Building production
 ---
-```
+``` code
 npm run buid
 ```
 It generates static file `public/bundle.js`.
@@ -51,7 +47,6 @@ It generates static file `public/bundle.js`.
 You can run `public/index.html`
 
 ## Directory structure
----
 ```
 Root
 ├── app
@@ -86,7 +81,6 @@ import '../node_modules/font-awesome/scss/font-awesome.scss'
 import './stylesheets/style.scss';
 ```
 ## Using with react router
----
 You can edit at `app/routes/index.js`
 ``` javascript
 // Import react
@@ -107,10 +101,7 @@ export default () => {
     )
 }
 ```
-
-
 ## Documents
----
 * [Awesome Redux](https://github.com/xgrommx/awesome-redux)
 * [Redux offical docs](http://redux.js.org/)
 * [Redux example es6](https://github.com/yildizberkay/redux-example) 
