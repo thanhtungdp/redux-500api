@@ -8,6 +8,7 @@ It uses an example from [redux-example](https://github.com/yildizberkay/redux-ex
 ## Demo online
 [http://redux500.firebaseapp.com/](redux500.firebaseapp.com/)
 Demo:
+
 ![demo gif][demo]
 [demo]: https://media.giphy.com/media/l0K4nEi6sb8txzvvG/giphy.gif
 
