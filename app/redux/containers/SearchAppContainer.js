@@ -2,36 +2,33 @@ import React, {Component, PropTypes} from 'react';
 import {bindActionCreators} from 'redux';
 import {Grid, Col} from 'react-bootstrap';
 import {connect} from 'react-redux';
-import * as action from '../actions/SearchActions';
-import SearchInput from '../components/SearchInput';
-import PhotoList from '../components/PhotoList';
+import {searchPhotoAction, searchNextPageAction} from '../actions/SearchActions';
+import SearchInput from '../../components/photos/SearchInput';
+import PhotoList from '../../components/photos/PhotoList';
 
-class SearchApp extends Component {
+class SearchAppContainer extends Component {
     render() {
-        const actions = bindActionCreators(action, this.props.dispatch);
         return (
             <div>
                 <div id="header" className="header">
                     <Grid>
                             <Col md={6} mdOffset={3} className="search-bar-content">
                                 <h1>Search 500px</h1>
-                                <SearchInput actions={actions} status={this.props.status} search={this.props.search} dispatch={this.props.dispatch}/>
+                                <SearchInput {...this.props}/>
                             </Col>
                     </Grid>
                 </div>
                 <div className="container">
-                    <PhotoList actions={actions} photos={this.props.photos} status={this.props.status}
-                               page={this.props.page}/>
+                    <PhotoList {...this.props}/>
                 </div>
             </div>
         )
     }
 }
 
-SearchApp.propTypes = {
+SearchAppContainer.propTypes = {
     status: PropTypes.string.isRequired,
     photos: PropTypes.array,
-    dispatch: PropTypes.func.isRequired,
     page: PropTypes.number
 }
 
@@ -45,5 +42,8 @@ const mapStateToProps = (state, ownProps) =>
     }
 }
 
+const mapDispatchToProps = (dispatch) => {
+    return bindActionCreators({searchPhotoAction, searchNextPageAction}, dispatch);
+}
 
-export default connect(mapStateToProps)(SearchApp)
+export default connect(mapStateToProps, mapDispatchToProps)(SearchAppContainer)

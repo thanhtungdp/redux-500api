@@ -25,7 +25,7 @@ export default function searchPhotos(state = initalState, action) {
             return {
                 ...state,
                 photos: [],
-                status: 'PENDING'
+                status: 'PENDING',
             }
         default:
             return state;

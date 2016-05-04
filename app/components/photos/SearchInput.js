@@ -1,7 +1,6 @@
 import React,{Component, PropTypes} from 'react';
 import ReactDOM from 'react-dom';
 import {hashHistory} from 'react-router';
-import {searchPhotoAction} from '../actions/SearchActions';
 
 export default class SearchInput extends Component {
     constructor(props) {
@@ -9,8 +8,8 @@ export default class SearchInput extends Component {
     }
 
     searchPhoto(value) {
-        if (this.props.status != "FETCHING") {
-            this.props.dispatch(searchPhotoAction(value));
+        if (this.props.status != "PENDING") {
+            this.props.searchPhotoAction(value);
             document.getElementById('header').style.animationPlayState = 'running';
         }
     }
@@ -57,6 +56,5 @@ export default class SearchInput extends Component {
 }
 
 SearchInput.propTypes = {
-    actions: PropTypes.object,
     status: PropTypes.string
 }

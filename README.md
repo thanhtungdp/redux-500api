@@ -1,4 +1,9 @@
-# React with redux & hot loader (simple starter kit)
+# React Redux Simple Starter Kit (simple, clean, easy)
+
+[Demo online](redux500.firebaseapp.com/)
+
+---
+
 
 `npm run start` - run webpack on dev server - access localhost:8080
 

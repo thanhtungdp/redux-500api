@@ -1,5 +1,6 @@
 var webpack = require('webpack');
 var path = require('path');
+var config_webpath_dev = require('./configs/webpack_dev');
 
 var config = {
     devtool: 'eval',
@@ -40,7 +41,9 @@ var config = {
         colors: true,
         historyApiFallback: true,
         inline: true,
-        hot: true
+        hot: true,
+        host: config_webpath_dev.domain,
+        port: config_webpath_dev.port
     },
 }
 
