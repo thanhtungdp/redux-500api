@@ -6,7 +6,7 @@ This project is a simple starter for developing with react,  redux & hot loader.
 It uses an example from [redux-example](https://github.com/yildizberkay/redux-example)
 
 ## Demo online
-[http://redux500.firebaseapp.com/](redux500.firebaseapp.com/)
+[http://redux500.firebaseapp.com/](http://redux500.firebaseapp.com/)
 Demo:
 
 ![demo gif][demo]
