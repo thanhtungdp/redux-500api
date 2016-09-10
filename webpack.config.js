@@ -26,7 +26,7 @@ var config = {
             },
             {
                 test: /\.scss$/,
-                loaders: ["style", "css", "sass"]
+                loader: "style-loader!css-loader!sass-loader"
             },
             {test: /\.(png|jpg)$/, loader: 'file-loader'},
             {test: /\.woff(\?v=\d+\.\d+\.\d+)?$/, loader: "url?limit=10000&mimetype=application/font-woff"},
